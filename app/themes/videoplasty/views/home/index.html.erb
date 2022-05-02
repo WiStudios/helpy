@@ -2,6 +2,11 @@
 
 <% if knowledgebase? %>
   <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <%= content_tag :h3, (AppSettings['settings.site_tagline'] if params[:controller] == 'home'), class: 'vp-page-title vp-home' %>
+    </div>
+  </div>
+  <div class="row">
     <% @categories.each do |category| %>
       <%# if category.docs.all.with_translations(I18n.locale).count > 0 %>
         <%= render partial: 'categories/category_panel', object: category %>

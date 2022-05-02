@@ -1,14 +1,16 @@
 <% title "#{AppSettings['settings.site_name']}: #{@page_title}" %>
 <% meta_tag :description, "#{@category.meta_description}" %>
 <% meta_tag :keywords, "#{@category.keywords}" %>
-  <div class="row">
-    <% Category.children_of(@category).ordered.each do |category| %>
+<div class="row">
+  <% Category.children_of(@category).ordered.each do |category| %>
     <%# if category.docs.all.with_translations(I18n.locale).count > 0 %>
     <%= render partial: 'categories/category_panel', object: category %>
     <%# end %>
-    <% end %>
-  </div>
-<div class="row">
+  <% end %>
+</div>
+<%= content_tag :p, ( @category.meta_description if params[:controller] == 'categories'), class: 'vp-category-description' %>
+
+<div class="row" style="margin: 0">
   <% @docs.each do |doc| %>
     <%= render "docs/doc_panel", doc: doc %>
   <% end %>
