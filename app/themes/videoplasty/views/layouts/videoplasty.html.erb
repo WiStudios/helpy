@@ -40,7 +40,7 @@
 			<header>
 				<div class="container">
 					<div class="text-center">
-						<%= link_to image_tag("#{AppSettings['design.header_logo']}", width: "156px", height: '16px', class: "logo"), root_path, responsive: true %>
+						<%= link_to image_tag("#{AppSettings['design.header_logo']}", width: "156px", height: '16px', class: "logo"), AppSettings['settings.parent_site'], responsive: true %>
 					</div>
 				</div>
 			</header>
@@ -87,7 +87,7 @@
 				</div>
 			</div>
 		</article>
-		<%= render partial: 'shared/contact' %>
+		<%= render partial: 'shared/contact' unless params[:controller]=='topics' && params[:action]=='new' %>
 
 	</main>
 

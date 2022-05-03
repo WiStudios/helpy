@@ -16,7 +16,7 @@ body {
 }
 
 body .form-control {
-  font-size: 18px !important;
+  font-size: 14px !important;
   font-weight: 500;
   color: #212121;
   caret-color: #01AA9D;
@@ -54,6 +54,10 @@ body .has-error .form-control {
   color: #f53737;
 }
 
+.has-feedback label ~ .form-control-feedback {
+  top: 52%;
+  transform: translateY(-51%);
+}
 .btn.rounded {
   padding: 11px 29px;
   border-radius: 10px !important;
@@ -347,7 +351,7 @@ ul.breadcrumb {
 #upper-wrapper {
   height: 180px;
   padding: 0px;
-  background-color: #333;
+  background-color: #022042;
 
   > div {
     padding-top: 0px;
@@ -1440,7 +1444,7 @@ table#users {
         margin-left: 0.25rem;
 
         &:hover {
-          color: #015e57;
+          color: #FAFAFA;
           text-decoration: underline;
         }
       }
