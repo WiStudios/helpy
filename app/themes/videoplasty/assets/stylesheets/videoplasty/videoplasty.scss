@@ -54,10 +54,6 @@ body .has-error .form-control {
   color: #f53737;
 }
 
-.has-feedback label ~ .form-control-feedback {
-  top: 52%;
-  transform: translateY(-51%);
-}
 .btn.rounded {
   padding: 11px 29px;
   border-radius: 10px !important;
