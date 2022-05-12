@@ -799,10 +799,10 @@ header {
 }
 
 #did-this-help {
-  margin-top: 80px;
+  margin-top: 0px;
 
   h3 {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 }
 
@@ -909,7 +909,7 @@ header {
 .breadcrumb > li + li:before {
   content: ">\00a0";
   padding: 0 5px;
-  color: $main-panel-breadcrumb-color;
+  color: #666;
 }
 
 .breadcrumb > .active {

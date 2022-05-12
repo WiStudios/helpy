@@ -62,12 +62,6 @@
       
       <%= f.simple_fields_for :posts, validate: true do |p| %>
         <%= p.input :body, label: I18n.t(:message), input_html: {:rows => 8, :cols => 60, placeholder: I18n.t(:how_can_we_help), label: 'Message', class: 'disable-empty form-control topic-placeholder'} %>
-        <% unless cloudinary_enabled? %>
-          <%= p.file_field :attachments, multiple: true, onchange: "Helpy.validateFiles(this, whitelist, blacklist);" %>
-          <!-- <ul class="list-inline" id="attachments"> -->
-            <%#= render partial: 'posts/attachment', locals: { :model_name => @post } %>
-          <!-- </ul> -->
-        <% end %>
       <% end %>
 
       <div class="add-screenshots">
