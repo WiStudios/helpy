@@ -31,7 +31,9 @@ REFERENCED LICENSE
 <%= timeago_script_tag %>
 
 <%= @feed_link.html_safe if @feed_link %>
-<link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
 <%= csrf_meta_tags %>
 <%= favicon_link_tag "#{AppSettings['design.favicon']}" %>
