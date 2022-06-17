@@ -449,10 +449,10 @@ Helpy.didthisHelp = function(yesno){
   var message;
   var contactus;
   if (yesno === "no") {
-    message = "<h3>" + Helpy.noHelped + "</h3>";
+    message = "<h3 class='help-yesno-text'>" + Helpy.noHelped + "</h3>";
     contactus = "<div class='col-md-3 align-right'><h3>" + Helpy.contactUs + "</h3></div>";
   } else {
-    message = "<h3>" + Helpy.yesHelped + "</h3>";
+    message = "<h3 class='help-yesno-text'>" + Helpy.yesHelped + "</h3>";
     contactus = '';
   }
 

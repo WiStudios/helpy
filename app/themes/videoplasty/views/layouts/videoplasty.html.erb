@@ -86,7 +86,7 @@
 				</div>
 			</div>
 		</article>
-		<%= render partial: 'shared/contact' unless params[:controller]=='topics' && params[:action]=='new' %>
+		<%= render partial: 'shared/contact' unless params[:controller]=='topics' && (params[:action]=='new' || params[:action]=='thanks') %>
 
 	</main>
 
