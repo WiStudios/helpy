@@ -25,7 +25,7 @@ class DeviseMailer < Devise::Mailer
   def invitation_instructions(record, token, opts={})
     @token = token
     opts[:from] = %("#{AppSettings['settings.site_name']}" <#{AppSettings['email.admin_email']}>)
-    opts[:reply_to] = %("#{AppSettings['email.admin_email']}")
+    opts[:reply_to] = AppSettings['email.admin_email']
     opts[:subject] = %([#{AppSettings['settings.site_name']}] #{t('devise.mailer.invitation_instructions.subject')})
     devise_mail(record, :invitation_instructions, opts)
   end
