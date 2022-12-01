@@ -794,7 +794,7 @@ header {
 .breadcrumb > li + li:before {
   content: ">\00a0";
   padding: 0 5px;
-  color: $main-panel-breadcrumb-color;
+  color: #232323;
 }
 
 .breadcrumb > .active {
@@ -898,7 +898,7 @@ ul.locale-list li {
 
 .home-icon {
   font-size: 48px;
-  color: #ddd;
+  color: #232323;
 }
 
 //  === KNOWLEDGEBASE ===
