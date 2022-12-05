@@ -120,9 +120,6 @@ a {
   }
 }
 
-#panel{
-  margin-bottom: 82px;
-}
 
 .thanks-wrapper {
   display: flex;
@@ -197,7 +194,7 @@ i.circle-icon {
 
 #search-form {
   #search-field {
-    background: #EFF1F3;
+    background: #FFFFFF;
     border-radius: 10px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -207,7 +204,7 @@ i.circle-icon {
 
   #search-btn {
     height: 50px;
-    background: #EFF1F3;
+    background: #FFFFFF;
     border-radius: 10px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -1022,67 +1019,6 @@ header {
 }
 
 
-// Product Detial page
-
-#billing-payment {
-  margin-top: 50px;
-  border: 1px solid #E0E0E0;
-
-  .billing-payment-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-
-    .billing-payment-buttons {
-      .btn.billing-payment-btn {
-        font-family: $font-family-montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 100%;
-        text-align: center;
-        color: #424242;
-        border: 1px solid #E0E0E0;
-        border-radius: 3px;
-        background: #FFFFFF;
-        box-sizing: border-box;
-        padding: 10px 25px;
-        margin: 0 10px;
-      }
-    }
-  }
-
-  .billing-payment-title {
-    font-family: $font-family-montserrat;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 160%;
-    color: #212121;
-    margin-top: 0;
-  }
-
-  .billing-payment-subtitle {
-    font-family: $font-family-montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 130%;
-    color: #616161;
-  }
-
-  .send-email {
-    background: #01AA9D;
-    color: #FFFFFF;
-    height: 50px;
-    font-family: $font-family-montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 100%;
-    text-align: center;
-  }
-}
 
 //  === HOME PAGE ===
 
@@ -1423,8 +1359,6 @@ table#users {
 //  === FOOTER ===
 
 .vp-footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background: #fafafa;
   font-size: 14px;
@@ -1454,13 +1388,14 @@ table#users {
   .vp-footer-blue {
     background: #232323;
     color: #FFFFFF;
-    padding: 18px;
+    padding: 28px 18px;
 
     .vp-footer-blue-wrapper {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 4rem;
+      margin-bottom: 1rem;
 
       .link {
         font-size: 14px;
