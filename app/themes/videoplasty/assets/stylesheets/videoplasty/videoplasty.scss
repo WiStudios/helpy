@@ -65,7 +65,7 @@ body .has-error .form-control {
   border-color: #01AA9D !important;
   background: #01AA9D !important;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   padding: 10px 14px;
   border: 0;
@@ -126,7 +126,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  min-height: calc(100vh - 156px);
+  min-height: calc(100vh - 550px);
 }
 
 .back-home {
@@ -984,6 +984,11 @@ header {
     align-content: center;
     max-width: 800px;
     margin: auto;
+
+    div:last-of-type {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .contact-title {
